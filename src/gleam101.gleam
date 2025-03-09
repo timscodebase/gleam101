@@ -1,10 +1,12 @@
 import gleam/io
-import gleam/string as text
+import ints
+import object
+import maths
 
 pub fn main() {
-  // Use a function from the `gleam/io` module
-  io.println("Hello, Mike!")
-
-  // Use a function from the `gleam/string` module
-  io.println(text.reverse("Hello, Joe!"))
+  io.println("My lucky number is:")
+  io.debug(4)
+  ints.main()
+  object.main()
+  maths.main()
 }
